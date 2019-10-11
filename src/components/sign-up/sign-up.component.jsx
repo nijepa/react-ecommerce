@@ -6,8 +6,8 @@ import CustomButton from "../custom-button/custom-button.component";
 import {auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 class SignUp extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             displayName: '',
@@ -92,8 +92,6 @@ class SignUp extends Component {
             </div>
         )
     }
-};
-    
-
+}
 
 export default SignUp;
