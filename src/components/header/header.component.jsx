@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
@@ -27,7 +28,7 @@ const Header = ({ currentUser, hidden }) => (
             </Link>
             {currentUser ? (
                 <div className='option' onClick={() => auth.signOut()}>
-                    SIGN OUT
+                    <span className='user-name'>&#10038; {currentUser.displayName} &#10038;</span> SIGN OUT
                 </div>
             ) : (
                 <Link className='option' to='/signin'>

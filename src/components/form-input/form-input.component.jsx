@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './form-input.styles.scss';
 
 const FormInput = ({ handleChange, label, ...otherProps}) => (
@@ -12,7 +13,6 @@ const FormInput = ({ handleChange, label, ...otherProps}) => (
                 : null
         }
     </div>
-
 );
 
 export default FormInput;
