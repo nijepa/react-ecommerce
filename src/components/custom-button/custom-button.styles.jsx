@@ -50,7 +50,7 @@ export const CustomButtonContainer = styled.button`
   padding: 0 35px 0 35px;
   font-size: 15px;
   text-transform: uppercase;
-  font-family: 'Big Shoulders Text', cursive;
+  font-family: 'Ubuntu Condensed', cursive;
   font-weight: bolder;
   cursor: pointer;
   display: flex;
